@@ -71,3 +71,6 @@ pub mod pythagorean_triples_checker;
 
 /// Rock Paper Scissors Solution
 pub mod rock_paper_scissors;
+
+/// Coin Estimator Solution
+pub mod coin_estimator_by_weight;

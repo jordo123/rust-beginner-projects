@@ -27,7 +27,7 @@ To view documentation, run `cargo doc --open`
   - [ ] Bonus
 - [x] Pythagorean Triples Checker
 - [x] Rock Paper Scissors Game
-- [ ] Coin Estimator By Weight
+- [x] Coin Estimator By Weight
 - [ ] Mad Libs Story Maker
 - [ ] Change Calculator
 - [ ] Mean, Median, and Mode
