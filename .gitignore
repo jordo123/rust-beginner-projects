@@ -1,4 +1,3 @@
 /target
 **/*.rs.bk
 Cargo.lock
-readme_copy.sh
