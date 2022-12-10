@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["rand","rand_chacha","rand_core","rand_hc","rand_isaac","rand_jitter","rand_os","rand_pcg","rand_xorshift","rust_beginner_projects","winapi"];

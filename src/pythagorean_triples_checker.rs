@@ -1,18 +1,6 @@
 use std::io::{self, Write};
 
-/// Checks for a pythagorean triple
-/// # Examples
-/// ```
-/// # use rust_beginner_projects::pythagorean_triples_checker::check;
-/// assert_eq!(check(Some((3, 4, 5))), true);
-/// assert_eq!(check(Some((1, 2, 3))), false);
-/// ```
-/// # Parameters
-/// `nums` - An optional tuple containing the sides of a triangle
-/// - `Some(side_a, side_b, hypotenuse)`: Program will check if it is a pythagorean triple and exit right after
-/// - `None`: Program will prompt the user for input until the user exits
-/// # Returns
-/// `bool` - If passed parameters, retuns whether it was a pythagorean triple or not
+
 pub fn check(nums: Option<(i32, i32, i32)>) -> bool {
     println!("Pythagorian Triple Checker");
     // If it is getting the sides from the parameters, exit after one pass of the loop
@@ -39,9 +27,7 @@ pub fn check(nums: Option<(i32, i32, i32)>) -> bool {
     is_triple
 }
 
-/// Gets input from the user
-/// # Quits
-/// Will exit if it get's a non-integer input
+
 pub fn prompt() -> (i32, i32, i32) {
     let mut side_a = String::new();
     let mut side_b = String::new();

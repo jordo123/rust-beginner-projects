@@ -3,7 +3,6 @@ use std::io::{self, Write};
 use std::thread;
 use std::time::Duration;
 
-/// A list of responses from the magic 8 ball (10 positive responses, 5 neutral, and 5 negative)
 pub static RESPONSES: [&'static str; 20] = [
     "It is certain.",
     "It is decidedly so.",
@@ -27,7 +26,6 @@ pub static RESPONSES: [&'static str; 20] = [
     "Very doubtful.",
 ];
 
-/// Responds to the user after calling `prompt` to get input
 pub fn shake() {
     println!("Magic 8 Ball");
     loop {
@@ -60,9 +58,7 @@ pub fn shake() {
     }
 }
 
-/// Prompts the user for input
-/// # Returns
-/// `String` - The input from the user
+
 pub fn prompt() -> String {
     println!("type q to quit");
     print!("Your Question? > ");

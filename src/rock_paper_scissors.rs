@@ -1,18 +1,9 @@
-//! # Rock, Paper, Scissors
-//! This example isn't the shortest but I did it to show some
-//! operator overloading and implementing traits on a struct
-//! (and learn how to do it in the process)
 
 use rand::seq::SliceRandom;
 use std::cmp::{Ord, Ordering};
 use std::fmt;
 use std::io::{self, Write};
 
-/// A Rock, Paper, Scissors object
-///
-/// It is in charge of the rules of the game
-///
-/// Holds a String `chosen` that is "rock", "paper", or "scissors"
 #[derive(Eq)]
 pub struct RPS {
     /// The chosen move: either rock, paper, or scissors
@@ -20,19 +11,12 @@ pub struct RPS {
 }
 
 impl RPS {
-    /// Rock constant so I don't have to write rock every time
+    
     pub const ROCK: &'static str = "rock";
-    /// Paper constant so I don't have to write paper every time
+
     pub const PAPER: &'static str = "paper";
-    /// scissors constant so I don't have to write scissors every time
     pub const SCISSORS: &'static str = "scissors";
 
-    /// # Parameters
-    /// `chosen` - The user's move
-    /// # Returns
-    /// `Option<RPS>`:
-    /// - `None` if `chosen` isn't one of rock, paper, or scissors
-    /// - `Some(RPS)` if `chosen` is one of rock, paper, or scissors
     pub fn new(chosen: String) -> Option<RPS> {
         if [RPS::ROCK, RPS::PAPER, RPS::SCISSORS].contains(&chosen.as_ref()) {
             return Some(RPS { chosen });
@@ -40,9 +24,6 @@ impl RPS {
         None
     }
 
-    /// Selects rock paper or scissors at random and sets it to `chosen`
-    /// # Returns
-    /// `RPS` - An `RPS` object
     pub fn default() -> RPS {
         let mut rng = rand::thread_rng();
         RPS {
@@ -53,11 +34,6 @@ impl RPS {
         }
     }
 
-    /// Get user's move from standard input
-    /// # Returns
-    /// `bool` - If it was able to successfully get the input and set `chosen` to it
-    /// # Quits
-    /// Will exit the program if user input is "q" or "Q"
     pub fn get_input(&mut self) -> bool {
         let mut player_move = String::new();
         print!("Rock, Paper, or scissors? [\"q\" to quit]: ");
@@ -130,7 +106,6 @@ impl PartialEq for RPS {
     }
 }
 
-/// Start playing `Rock, Paper, Scissors`
 pub fn play() {
     // The point tally for the computer
     let mut c_tally = 0;

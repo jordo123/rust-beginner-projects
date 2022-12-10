@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["rust_beginner_projects"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.63.0/core/cmp/trait.Ord.html\" title=\"trait core::cmp::Ord\">Ord</a> for <a class=\"struct\" href=\"rust_beginner_projects/rock_paper_scissors/struct.RPS.html\" title=\"struct rust_beginner_projects::rock_paper_scissors::RPS\">RPS</a>","synthetic":false,"types":["rust_beginner_projects::rock_paper_scissors::RPS"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

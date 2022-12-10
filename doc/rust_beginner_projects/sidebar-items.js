@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["bottles_99","99 Bottles Solution"],["coin_estimator_by_weight","Coin Estimator Solution"],["mad_libs","Mad Libs Story Maker Solution"],["magic_8_ball","Magic 8 Ball Solution"],["pythagorean_triples_checker","Pythagorean Triples Checker Solution"],["rock_paper_scissors","Rock Paper Scissors Solution"]]};

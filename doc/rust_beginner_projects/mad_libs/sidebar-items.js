@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":[["get_words","Added this function to let the user input their own words Gathers user input words, passes it to the generator, and returns the string from the generator"],["mad_lib_generator","Takes in the user input words and returns the completed mad libs string"]]};
